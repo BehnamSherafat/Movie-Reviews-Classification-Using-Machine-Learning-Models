@@ -6,7 +6,6 @@
 3. Dimension Reduction (Principal Component Analysis)
 4. 10-fold Cross validation
 5. Tuning hyper-parameters
-6. 
 ## Introduction
 In the last two decades, machine learning algorithms have improved significantly. They have many applications in different domains. One of the most important ones is text recognition and prediction. In this project, I have used six machine learning algorithms to decide if a movie review is positive or negative. Every word is a feature and the value of features is the iterations of that specific word in the review. The results of this method can be further developed to be used on movie websites to predict reviews’ feedback automatically. 
 I have explored that most of these features (words) are not important and can be removed using feature reduction algorithms. In this project, I have used several ideas from the class such as, cross-validation, machine learning algorithms, and dimension reduction. I learned that only some specific types of methods work well. Also the accuracy of these methods is dependent on the hyper-parameters we choose. If I had much more time, I would try other machine learning algorithms such as Neural Networks and choose variety of hyper-parameters for them. Also, I would choose a stopping criteria for these machine learning methods so that it automatically stops when there is no improvement in the objective function. In the following sections, results of these six algorithms are discussed.
