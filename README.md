@@ -3,6 +3,20 @@
 In the last two decades, machine learning algorithms have improved significantly. They have many applications in different domains. One of the most important ones is text recognition and prediction. In this project, I have used six machine learning algorithms to decide if a movie review is positive or negative. Every word is a feature and the value of features is the iterations of that specific word in the review. The results of this method can be further developed to be used on movie websites to predict reviews’ feedback automatically. 
 I have explored that most of these features (words) are not important and can be removed using feature reduction algorithms. In this project, I have used several ideas from the class such as, cross-validation, machine learning algorithms, and dimension reduction. I learned that only some specific types of methods work well. Also the accuracy of these methods is dependent on the hyper-parameters we choose. If I had much more time, I would try other machine learning algorithms such as Neural Networks and choose variety of hyper-parameters for them. Also, I would choose a stopping criteria for these machine learning methods so that it automatically stops when there is no improvement in the objective function. In the following sections, results of these six algorithms are discussed.
 
+****For implementing all codes, please open "run.sh" file********
+
+Pre-processing algorithm:
+1)  Initial parameters are defined for different methods;
+2) Data is read and stored it into tables;
+3) Data is saved as sparse data for further use. I used a function named “Sparse”, which saves it as a sparse table. This table can be used for further processes;
+4) Sparse data is loaded;
+5) Features’ dimension of data is made the same as each other;
+6) Sparse data is changed into full tables;
+7) The important key point is that because the initial data set is large and consists of about 74000 features, the reading and processing time would be so long.
+Thus, I used Principal Component Analysis (PCA) to reduce the dimension of the features.
+The main idea of PCA is to reduce the dimensionality of a data set consisting of many variables correlated with each other, either heavily or lightly, while retaining the variation present in the data set up to the maximum extent.
+Using PCA, I have reduced the number of features to different values (i.e. 100, 300, 500, 1000, 2000, and 10000) which can be defined at the beginning of code “desired_num_feat” to test the most optimum major features that decrease the computational time and increase the accuracy; and 8) Finally, specific algorithm for each method is implemented.
+
 ##  Methodology and Results
 In this project, I have used six different algorithms. For all of the algorithms, a pre-processing step is implemented before running the main code which is explained in the next section.
 2.1.  Pre-processing
